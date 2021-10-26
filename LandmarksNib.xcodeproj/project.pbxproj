@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B9D5F4827283252006721DA /* LandmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4627283252006721DA /* LandmarkTableViewCell.swift */; };
+		8B9D5F4927283252006721DA /* LandmarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4727283252006721DA /* LandmarkTableViewCell.xib */; };
+		8B9D5F4C27283671006721DA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4B27283671006721DA /* Landmark.swift */; };
 		8BDC217B272819CE002CC9A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217A272819CE002CC9A0 /* AppDelegate.swift */; };
 		8BDC217D272819CE002CC9A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */; };
 		8BDC217F272819CE002CC9A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217E272819CE002CC9A0 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B9D5F4627283252006721DA /* LandmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkTableViewCell.swift; sourceTree = "<group>"; };
+		8B9D5F4727283252006721DA /* LandmarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandmarkTableViewCell.xib; sourceTree = "<group>"; };
+		8B9D5F4B27283671006721DA /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		8BDC2177272819CE002CC9A0 /* LandmarksNib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarksNib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDC217A272819CE002CC9A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B9D5F4527283204006721DA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D5F4627283252006721DA /* LandmarkTableViewCell.swift */,
+				8B9D5F4727283252006721DA /* LandmarkTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8B9D5F4A27283641006721DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D5F4B27283671006721DA /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8BDC216E272819CE002CC9A0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +79,8 @@
 		8BDC2179272819CE002CC9A0 /* LandmarksNib */ = {
 			isa = PBXGroup;
 			children = (
+				8B9D5F4A27283641006721DA /* Model */,
+				8B9D5F4527283204006721DA /* Cells */,
 				8BDC217A272819CE002CC9A0 /* AppDelegate.swift */,
 				8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */,
 				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
@@ -128,6 +153,7 @@
 				8BDC2187272819CF002CC9A0 /* LaunchScreen.storyboard in Resources */,
 				8BDC2184272819CF002CC9A0 /* Assets.xcassets in Resources */,
 				8BDC2182272819CE002CC9A0 /* Main.storyboard in Resources */,
+				8B9D5F4927283252006721DA /* LandmarkTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +167,8 @@
 				8BDC217F272819CE002CC9A0 /* ViewController.swift in Sources */,
 				8BDC217B272819CE002CC9A0 /* AppDelegate.swift in Sources */,
 				8BDC217D272819CE002CC9A0 /* SceneDelegate.swift in Sources */,
+				8B9D5F4827283252006721DA /* LandmarkTableViewCell.swift in Sources */,
+				8B9D5F4C27283671006721DA /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
