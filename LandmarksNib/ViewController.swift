@@ -12,11 +12,10 @@ class ViewController: UIViewController {
     let landmarkCellId = "LandmarkTableViewCell"
     var landmark = [Landmark]()
     
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet private weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // register cell
         tableview.register(UINib.init(nibName: landmarkCellId, bundle: nil), forCellReuseIdentifier: landmarkCellId)
         tableview.rowHeight = UITableView.automaticDimension
@@ -25,8 +24,6 @@ class ViewController: UIViewController {
         //init data
         for _ in 1...25 {
             var landmarks = Landmark()
-            landmarks?.name = "testName"
-            landmarks?.description = "testDescription"
             landmark.append(landmarks!)
         }
         tableview.reloadData()
@@ -48,9 +45,9 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: landmarkCellId, for: indexPath) as! LandmarkTableViewCell
+        cell.configure(name: "Name", parkName: "Park Name")
         let landmarks = landmark[indexPath.row]
-        cell.lbName.text = landmarks.name!
-        cell.lbDescription.text = landmarks.description!
+
         return cell
     }
     

@@ -7,13 +7,10 @@
 
 import Foundation
 
-class Landmark {
-    var id: Int?
+class Landmark: Codable {
     var name: String?
     var park: String?
-    var state: String?
     var description: String?
-    var isFavorite: Bool?
     var imageName: String?
     required init?() {}
 }
