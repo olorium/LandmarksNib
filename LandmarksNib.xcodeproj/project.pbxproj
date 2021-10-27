@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B9D5F4827283252006721DA /* LandmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4627283252006721DA /* LandmarkTableViewCell.swift */; };
-		8B9D5F4927283252006721DA /* LandmarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4727283252006721DA /* LandmarkTableViewCell.xib */; };
-		8B9D5F4C27283671006721DA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4B27283671006721DA /* Landmark.swift */; };
+		8B12B63E27296216007A533A /* ParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12B63D27296216007A533A /* ParkViewController.swift */; };
+		8B12B64127299518007A533A /* ParkHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */; };
+		8B12B64227299518007A533A /* ParkHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */; };
+		8B9D5F4827283252006721DA /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */; };
+		8B9D5F4927283252006721DA /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */; };
+		8B9D5F4C27283671006721DA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4B27283671006721DA /* Place.swift */; };
 		8B9D5F5027284CFB006721DA /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4F27284CFB006721DA /* landmarkData.json */; };
-		8B9D5F5327294126006721DA /* ParkHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5127294126006721DA /* ParkHeaderTableViewCell.swift */; };
-		8B9D5F5427294126006721DA /* PlaceHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5227294126006721DA /* PlaceHeaderTableViewCell.xib */; };
 		8B9D5F5C272941AD006721DA /* ParkInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */; };
-		8B9D5F5D272941AD006721DA /* PlaceInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5B272941AD006721DA /* PlaceInfoTableViewCell.xib */; };
+		8B9D5F5D272941AD006721DA /* ParkInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */; };
 		8BDC217B272819CE002CC9A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217A272819CE002CC9A0 /* AppDelegate.swift */; };
 		8BDC217D272819CE002CC9A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */; };
 		8BDC217F272819CE002CC9A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217E272819CE002CC9A0 /* ViewController.swift */; };
@@ -24,14 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B9D5F4627283252006721DA /* LandmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkTableViewCell.swift; sourceTree = "<group>"; };
-		8B9D5F4727283252006721DA /* LandmarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandmarkTableViewCell.xib; sourceTree = "<group>"; };
-		8B9D5F4B27283671006721DA /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		8B12B63D27296216007A533A /* ParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkViewController.swift; sourceTree = "<group>"; };
+		8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		8B9D5F4B27283671006721DA /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8B9D5F4F27284CFB006721DA /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
-		8B9D5F5127294126006721DA /* ParkHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		8B9D5F5227294126006721DA /* PlaceHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkInfoTableViewCell.swift; sourceTree = "<group>"; };
-		8B9D5F5B272941AD006721DA /* PlaceInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceInfoTableViewCell.xib; sourceTree = "<group>"; };
+		8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkInfoTableViewCell.xib; sourceTree = "<group>"; };
 		8BDC2177272819CE002CC9A0 /* LandmarksNib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarksNib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDC217A272819CE002CC9A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +58,8 @@
 		8B9D5F4527283204006721DA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8B9D5F5627294142006721DA /* LandmarkTableCells */,
-				8B9D5F572729415F006721DA /* PlaceInfoCells */,
+				8B9D5F5627294142006721DA /* PlaceTableCells */,
+				8B9D5F572729415F006721DA /* ParkInfoCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -65,29 +67,38 @@
 		8B9D5F4A27283641006721DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8B9D5F4B27283671006721DA /* Landmark.swift */,
+				8B9D5F4B27283671006721DA /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8B9D5F5627294142006721DA /* LandmarkTableCells */ = {
+		8B9D5F5627294142006721DA /* PlaceTableCells */ = {
 			isa = PBXGroup;
 			children = (
-				8B9D5F4627283252006721DA /* LandmarkTableViewCell.swift */,
-				8B9D5F4727283252006721DA /* LandmarkTableViewCell.xib */,
+				8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */,
+				8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */,
 			);
-			path = LandmarkTableCells;
+			path = PlaceTableCells;
 			sourceTree = "<group>";
 		};
-		8B9D5F572729415F006721DA /* PlaceInfoCells */ = {
+		8B9D5F572729415F006721DA /* ParkInfoCells */ = {
 			isa = PBXGroup;
 			children = (
-				8B9D5F5127294126006721DA /* ParkHeaderTableViewCell.swift */,
-				8B9D5F5227294126006721DA /* PlaceHeaderTableViewCell.xib */,
 				8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */,
-				8B9D5F5B272941AD006721DA /* PlaceInfoTableViewCell.xib */,
+				8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */,
+				8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */,
+				8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */,
 			);
-			path = PlaceInfoCells;
+			path = ParkInfoCells;
+			sourceTree = "<group>";
+		};
+		8B9D5F5E27296023006721DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
+				8B12B63D27296216007A533A /* ParkViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8BDC216E272819CE002CC9A0 = {
@@ -109,11 +120,11 @@
 		8BDC2179272819CE002CC9A0 /* LandmarksNib */ = {
 			isa = PBXGroup;
 			children = (
-				8B9D5F4A27283641006721DA /* Model */,
-				8B9D5F4527283204006721DA /* Cells */,
 				8BDC217A272819CE002CC9A0 /* AppDelegate.swift */,
 				8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */,
-				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
+				8B9D5F4A27283641006721DA /* Model */,
+				8B9D5F4527283204006721DA /* Cells */,
+				8B9D5F5E27296023006721DA /* Controllers */,
 				8BDC2180272819CE002CC9A0 /* Main.storyboard */,
 				8BDC2183272819CF002CC9A0 /* Assets.xcassets */,
 				8BDC2185272819CF002CC9A0 /* LaunchScreen.storyboard */,
@@ -185,9 +196,9 @@
 				8BDC2184272819CF002CC9A0 /* Assets.xcassets in Resources */,
 				8BDC2182272819CE002CC9A0 /* Main.storyboard in Resources */,
 				8B9D5F5027284CFB006721DA /* landmarkData.json in Resources */,
-				8B9D5F5427294126006721DA /* PlaceHeaderTableViewCell.xib in Resources */,
-				8B9D5F5D272941AD006721DA /* PlaceInfoTableViewCell.xib in Resources */,
-				8B9D5F4927283252006721DA /* LandmarkTableViewCell.xib in Resources */,
+				8B12B64227299518007A533A /* ParkHeaderTableViewCell.xib in Resources */,
+				8B9D5F5D272941AD006721DA /* ParkInfoTableViewCell.xib in Resources */,
+				8B9D5F4927283252006721DA /* PlaceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9D5F5327294126006721DA /* ParkHeaderTableViewCell.swift in Sources */,
+				8B12B63E27296216007A533A /* ParkViewController.swift in Sources */,
 				8BDC217F272819CE002CC9A0 /* ViewController.swift in Sources */,
+				8B12B64127299518007A533A /* ParkHeaderTableViewCell.swift in Sources */,
 				8BDC217B272819CE002CC9A0 /* AppDelegate.swift in Sources */,
 				8BDC217D272819CE002CC9A0 /* SceneDelegate.swift in Sources */,
-				8B9D5F4827283252006721DA /* LandmarkTableViewCell.swift in Sources */,
+				8B9D5F4827283252006721DA /* PlaceTableViewCell.swift in Sources */,
 				8B9D5F5C272941AD006721DA /* ParkInfoTableViewCell.swift in Sources */,
-				8B9D5F4C27283671006721DA /* Landmark.swift in Sources */,
+				8B9D5F4C27283671006721DA /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

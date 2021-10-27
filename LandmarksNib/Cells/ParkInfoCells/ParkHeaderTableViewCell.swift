@@ -1,5 +1,5 @@
 //
-//  PlaceHeaderTableViewCell.swift
+//  ParkHeaderTableViewCell.swift
 //  LandmarksNib
 //
 //  Created by Oleksii Vasyliev on 27.10.2021.
@@ -9,9 +9,8 @@ import UIKit
 
 class ParkHeaderTableViewCell: UITableViewCell {
 
-    @IBOutlet private weak var placeImageView: UIImageView!
+    @IBOutlet private weak var parkImageView: UIImageView!
     @IBOutlet private weak var parkFullNameLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,8 +22,7 @@ class ParkHeaderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configure(image: String, parkName: String) {
-        placeImageView.image = UIImage(named: "\(image)")
+        parkImageView.image = UIImage(named: "\(image)")
         parkFullNameLabel.text = parkName
     }
-    
 }

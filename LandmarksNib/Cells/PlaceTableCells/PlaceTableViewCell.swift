@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LandmarkTableViewCell: UITableViewCell {
+class PlaceTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var placeImageView: UIImageView!
     @IBOutlet private weak var placeNameLabel: UILabel!
