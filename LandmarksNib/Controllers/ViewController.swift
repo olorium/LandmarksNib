@@ -6,35 +6,55 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
-    let placeCellId = "PlaceTableViewCell"
-    var place = [Place]()
+    @IBOutlet private weak var tableView: UITableView!
     
-    @IBOutlet private weak var tableview: UITableView!
+    //MARK: - Properties
+    
+    let placeCellId = "PlaceTableViewCell"
+    private var places: [Place] = []
+    
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
         //init data
-        for _ in 1...25 {
-            let places = Place()
-            place.append(places!)
-        }
+//        for _ in 1...25 {
+//            let places = Items()
+//            place.append(places!)
+//        }
         setupTableView()
-        tableview.reloadData()
+        fetchData()
     }
-    //MARK: - Registering Nibs
+
+//MARK: - Methods
+    private func fetchData() {
+        AF.request("https://slashapp.dev/api/landmarkData.json", method: .get).responseDecodable(of: [Place].self) { response in
+            self.places = response.value ?? []
+            self.tableView.reloadData()
+        }
+    }
+    
+//MARK: - Registering Nibs
     private func setupTableView() {
-        tableview.register(UINib.init(nibName: placeCellId, bundle: nil), forCellReuseIdentifier: placeCellId)
-                tableview.rowHeight = UITableView.automaticDimension
-                tableview.separatorColor = UIColor.clear
+        tableView.register(UINib.init(nibName: placeCellId, bundle: nil), forCellReuseIdentifier: placeCellId)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.separatorColor = UIColor.clear
     }
 }
-//MARK: - TableView Delegates
+//MARK: - UITableViewDelegate
+
 extension ViewController: UITableViewDelegate {
     
 }
+
+//MARK: - UITableViewDataSource
+
 extension ViewController: UITableViewDataSource {
    
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,13 +62,13 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return place.count
+        return places.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: placeCellId, for: indexPath) as! PlaceTableViewCell
-        cell.configure(name: "Name", parkName: "Park Name")
-        let places = place[indexPath.row]
+        cell.configure(name: places[indexPath.row].name, parkName: places[indexPath.row].park, image: places[indexPath.row].imageName)
+        //let places = place[indexPath.row]
 
         return cell
     }
@@ -59,10 +79,12 @@ extension ViewController: UITableViewDataSource {
 
 //MARK: - Segue method
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination as? ParkViewController {
-//            destination.places = place[(tableView.indexPathForSelectedRow?.row)!]
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ParkViewController {
+            destination.parkName = places[(tableView.indexPathForSelectedRow?.row)!].park
+            destination.parkImage = places[(tableView.indexPathForSelectedRow?.row)!].imageName
+            destination.parkDescription = places[(tableView.indexPathForSelectedRow?.row)!].description
+        }
+    }
 }
 

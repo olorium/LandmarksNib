@@ -7,20 +7,11 @@
 
 import UIKit
 
-class ParkHeaderTableViewCell: UITableViewCell {
+final class ParkHeaderTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var parkImageView: UIImageView!
     @IBOutlet private weak var parkFullNameLabel: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     func configure(image: String, parkName: String) {
         parkImageView.image = UIImage(named: "\(image)")
         parkFullNameLabel.text = parkName
