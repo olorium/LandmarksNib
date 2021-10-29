@@ -17,6 +17,8 @@ class PlaceTableViewCell: UITableViewCell {
         placeNameLabel.text = name
         placeParkNameLabel.text = parkName
         placeImageView.image = UIImage(named: "\(image)")
+        placeImageView.contentMode = UIView.ContentMode.scaleAspectFill
+        placeImageView.layer.cornerRadius = 15
     }
     
     
