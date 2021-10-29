@@ -17,26 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zxe-WP-DF0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="786"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zxe-WP-DF0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="500"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="1Bw-wI-JNO"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Hvb-3J-HEX"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvN-D0-Tkc">
+                                <rect key="frame" x="0.0" y="701" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KvN-D0-Tkc" secondAttribute="bottom" constant="140" id="1jI-bj-qV4"/>
                             <constraint firstItem="Zxe-WP-DF0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TiD-Ms-vhV"/>
+                            <constraint firstItem="KvN-D0-Tkc" firstAttribute="top" secondItem="Zxe-WP-DF0" secondAttribute="bottom" constant="113" id="fbF-Og-E20"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zxe-WP-DF0" secondAttribute="trailing" id="gM6-9i-Oqo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zxe-WP-DF0" secondAttribute="bottom" id="pvL-Lp-r1I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KvN-D0-Tkc" secondAttribute="trailing" id="gp3-tW-4U0"/>
+                            <constraint firstItem="KvN-D0-Tkc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ljh-M0-GbY"/>
                             <constraint firstItem="Zxe-WP-DF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qH7-vS-vel"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m0w-kd-WtW"/>
                     <connections>
+                        <outlet property="bottomUILabel" destination="KvN-D0-Tkc" id="lf3-VG-XGl"/>
+                        <outlet property="navigationBar" destination="m0w-kd-WtW" id="qF9-lm-PNS"/>
                         <outlet property="tableView" destination="Zxe-WP-DF0" id="0Uc-GX-aj2"/>
                         <segue destination="aar-fU-OMa" kind="show" identifier="fullDescription" id="UAN-kn-FxQ"/>
                     </connections>
@@ -71,8 +82,15 @@
                             <constraint firstItem="LO0-iP-cEe" firstAttribute="top" secondItem="TKJ-mm-pyB" secondAttribute="top" id="znc-6h-nN6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Rvo-pg-tHS"/>
+                    <navigationItem key="navigationItem" id="Rvo-pg-tHS">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="0eh-i5-8rj">
+                            <connections>
+                                <action selector="navigationBarSaveButton:" destination="aar-fU-OMa" id="XSq-Pj-Uoz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="navigationBarSaveItem" destination="0eh-i5-8rj" id="Yct-Yw-YwP"/>
                         <outlet property="tableView" destination="LO0-iP-cEe" id="Qft-bK-93v"/>
                     </connections>
                 </viewController>

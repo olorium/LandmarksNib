@@ -12,6 +12,10 @@
 
 import UIKit
 
+protocol ParkViewControllerDelegate {
+    func didSetTitle(_ newTitle: String)
+}
+
 enum ParkViewSections: String, CaseIterable {
     case header
     case description
@@ -20,6 +24,7 @@ enum ParkViewSections: String, CaseIterable {
 class ParkViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var navigationBarSaveItem: UIBarButtonItem!
     
     // MARK: - Properties
     
@@ -28,6 +33,7 @@ class ParkViewController: UIViewController {
     var parkName = ""
     var parkImage = ""
     var parkDescription = ""
+    var parkViewControllerDelegate: ParkViewControllerDelegate?
     
     var cellArray: [ParkViewSections] = [.header, .description]
     
@@ -38,10 +44,17 @@ class ParkViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         setupTableView()
+        navigationBarSaveItem.title = "Save"
     }
     
-    // MARK: - Methods
+    // MARK: - Actions
 
+    @IBAction func navigationBarSaveButton(_ sender: Any) {
+        let newTitle = "New Title"
+        parkViewControllerDelegate?.didSetTitle(newTitle)
+        navigationController?.popViewController(animated: true)
+        print(newTitle)
+    }
     
     //MARK: - Registering Nibs
     
@@ -56,7 +69,6 @@ class ParkViewController: UIViewController {
 // MARK: - UITableViewDelegate
 
 extension ParkViewController: UITableViewDelegate {
-    
 }
 
 // MARK: - UITableViewDataSource

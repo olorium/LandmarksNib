@@ -11,11 +11,14 @@ import Alamofire
 class ViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    @IBOutlet weak var bottomUILabel: UILabel!
     
     //MARK: - Properties
     
     let placeCellId = "PlaceTableViewCell"
     private var places: [Place] = []
+    let controller = ParkViewController()
     
     //MARK: - Lifecycle
     
@@ -23,11 +26,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        //init data
-//        for _ in 1...25 {
-//            let places = Items()
-//            place.append(places!)
-//        }
+        controller.parkViewControllerDelegate = self
+        navigationBar.title = "Places"
         setupTableView()
         fetchData()
     }
@@ -87,4 +87,11 @@ extension ViewController: UITableViewDataSource {
         }
     }
 }
+//MARK: - Delegates
 
+extension ViewController: ParkViewControllerDelegate {
+    func didSetTitle(_ newTitle: String) {
+        bottomUILabel.text = newTitle
+        navigationBar.title = newTitle
+    }
+}
