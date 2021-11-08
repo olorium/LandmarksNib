@@ -1,18 +1,6 @@
-//
-//  ParkViewController.swift
-//  LandmarksNib
-//
-//  Created by Oleksii Vasyliev on 27.10.2021.
-//
-
-// Создать UITextField на втором экране
-// Напечатать в нем текст
-// Нажать Save в navigationBar
-// передать этот текс в navigationTitle в первом экране
-
 import UIKit
 
-protocol ParkViewControllerDelegate {
+protocol ParkViewControllerDelegate: AnyObject {
     func didSetTitle(_ newTitle: String)
 }
 
@@ -22,7 +10,7 @@ enum ParkViewSections: String, CaseIterable {
 }
 
 class ParkViewController: UIViewController {
-    
+
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet weak var navigationBarSaveItem: UIBarButtonItem!
     
@@ -33,8 +21,10 @@ class ParkViewController: UIViewController {
     var parkName = ""
     var parkImage = ""
     var parkDescription = ""
-    var parkViewControllerDelegate: ParkViewControllerDelegate?
-    
+    var newTitle = ""
+    var pressedTitle = ""
+    weak var parkViewControllerDelegate: ParkViewControllerDelegate?
+
     var cellArray: [ParkViewSections] = [.header, .description]
     
     // MARK: - Lifecycle
@@ -50,10 +40,9 @@ class ParkViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func navigationBarSaveButton(_ sender: Any) {
-        let newTitle = "New Title"
+        newTitle = pressedTitle
         parkViewControllerDelegate?.didSetTitle(newTitle)
         navigationController?.popViewController(animated: true)
-        print(newTitle)
     }
     
     //MARK: - Registering Nibs
@@ -93,7 +82,15 @@ extension ParkViewController: UITableViewDataSource {
         case .description:
             let infoCell = tableView.dequeueReusableCell(withIdentifier: parkInfoCellId, for: indexPath) as! ParkInfoTableViewCell
             infoCell.configure(description: parkDescription)
+            infoCell.infoCellDelegate = self
             return infoCell
         }
+    }
+}
+//MARK: - Extensions
+
+extension ParkViewController: ParkInfoTableViewCellDelegate {
+    func didSendTextFromTextField(_ newText: String) {
+        pressedTitle = newText
     }
 }

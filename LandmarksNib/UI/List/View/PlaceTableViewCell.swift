@@ -1,10 +1,3 @@
-//
-//  LandmarkTableViewCell.swift
-//  LandmarksNib
-//
-//  Created by Oleksii Vasyliev on 26.10.2021.
-//
-
 import UIKit
 
 class PlaceTableViewCell: UITableViewCell {
@@ -20,6 +13,4 @@ class PlaceTableViewCell: UITableViewCell {
         placeImageView.contentMode = UIView.ContentMode.scaleAspectFill
         placeImageView.layer.cornerRadius = 15
     }
-    
-    
 }

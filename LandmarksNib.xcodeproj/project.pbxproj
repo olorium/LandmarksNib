@@ -60,15 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B9D5F4527283204006721DA /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				8B9D5F5627294142006721DA /* PlaceTableCells */,
-				8B9D5F572729415F006721DA /* ParkInfoCells */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		8B9D5F4A27283641006721DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,33 +68,67 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8B9D5F5627294142006721DA /* PlaceTableCells */ = {
+		8BAA7746273946EC005AAF94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA7747273946F6005AAF94 /* List */,
+				8BAA774927394707005AAF94 /* Detail */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8BAA7747273946F6005AAF94 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
+				8BAA774A27394717005AAF94 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8BAA774927394707005AAF94 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA774B27394735005AAF94 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8BAA774A27394717005AAF94 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */,
 				8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */,
 			);
-			path = PlaceTableCells;
+			path = View;
 			sourceTree = "<group>";
 		};
-		8B9D5F572729415F006721DA /* ParkInfoCells */ = {
+		8BAA774B27394735005AAF94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B12B63D27296216007A533A /* ParkViewController.swift */,
+				8BAA774C27394744005AAF94 /* Header */,
+				8BAA774D2739474C005AAF94 /* Info */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BAA774C27394744005AAF94 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */,
+				8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8BAA774D2739474C005AAF94 /* Info */ = {
 			isa = PBXGroup;
 			children = (
 				8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */,
 				8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */,
-				8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */,
-				8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */,
 			);
-			path = ParkInfoCells;
-			sourceTree = "<group>";
-		};
-		8B9D5F5E27296023006721DA /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
-				8B12B63D27296216007A533A /* ParkViewController.swift */,
-			);
-			path = Controllers;
+			path = Info;
 			sourceTree = "<group>";
 		};
 		8BDC216E272819CE002CC9A0 = {
@@ -127,11 +152,10 @@
 		8BDC2179272819CE002CC9A0 /* LandmarksNib */ = {
 			isa = PBXGroup;
 			children = (
+				8BAA7746273946EC005AAF94 /* UI */,
 				8BDC217A272819CE002CC9A0 /* AppDelegate.swift */,
 				8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */,
 				8B9D5F4A27283641006721DA /* Model */,
-				8B9D5F4527283204006721DA /* Cells */,
-				8B9D5F5E27296023006721DA /* Controllers */,
 				8BDC2180272819CE002CC9A0 /* Main.storyboard */,
 				8BDC2183272819CF002CC9A0 /* Assets.xcassets */,
 				8BDC2185272819CF002CC9A0 /* LaunchScreen.storyboard */,
