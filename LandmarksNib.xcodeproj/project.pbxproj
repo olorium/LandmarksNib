@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B12B63E27296216007A533A /* ParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12B63D27296216007A533A /* ParkViewController.swift */; };
+		8B12B64127299518007A533A /* ParkHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */; };
+		8B12B64227299518007A533A /* ParkHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */; };
+		8B9D5F4827283252006721DA /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */; };
+		8B9D5F4927283252006721DA /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */; };
+		8B9D5F4C27283671006721DA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4B27283671006721DA /* Place.swift */; };
+		8B9D5F5027284CFB006721DA /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F4F27284CFB006721DA /* landmarkData.json */; };
+		8B9D5F5C272941AD006721DA /* ParkInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */; };
+		8B9D5F5D272941AD006721DA /* ParkInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */; };
 		8BDC217B272819CE002CC9A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217A272819CE002CC9A0 /* AppDelegate.swift */; };
 		8BDC217D272819CE002CC9A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */; };
 		8BDC217F272819CE002CC9A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC217E272819CE002CC9A0 /* ViewController.swift */; };
 		8BDC2182272819CE002CC9A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC2180272819CE002CC9A0 /* Main.storyboard */; };
 		8BDC2184272819CF002CC9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC2183272819CF002CC9A0 /* Assets.xcassets */; };
 		8BDC2187272819CF002CC9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC2185272819CF002CC9A0 /* LaunchScreen.storyboard */; };
+		A187C53E033C2971F7956EFE /* Pods_LandmarksNib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015520E4E38F40408A315308 /* Pods_LandmarksNib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015520E4E38F40408A315308 /* Pods_LandmarksNib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LandmarksNib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56796FCC8F4D3A54DD83FDEF /* Pods-LandmarksNib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LandmarksNib.debug.xcconfig"; path = "Target Support Files/Pods-LandmarksNib/Pods-LandmarksNib.debug.xcconfig"; sourceTree = "<group>"; };
+		8B12B63D27296216007A533A /* ParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkViewController.swift; sourceTree = "<group>"; };
+		8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		8B9D5F4B27283671006721DA /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		8B9D5F4F27284CFB006721DA /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkInfoTableViewCell.swift; sourceTree = "<group>"; };
+		8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkInfoTableViewCell.xib; sourceTree = "<group>"; };
 		8BDC2177272819CE002CC9A0 /* LandmarksNib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarksNib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDC217A272819CE002CC9A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +45,7 @@
 		8BDC2183272819CF002CC9A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BDC2186272819CF002CC9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BDC2188272819CF002CC9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF17486655528CED639823E /* Pods-LandmarksNib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LandmarksNib.release.xcconfig"; path = "Target Support Files/Pods-LandmarksNib/Pods-LandmarksNib.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,91 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A187C53E033C2971F7956EFE /* Pods_LandmarksNib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B9D5F4A27283641006721DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D5F4B27283671006721DA /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BAA7746273946EC005AAF94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA7747273946F6005AAF94 /* List */,
+				8BAA774927394707005AAF94 /* Detail */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8BAA7747273946F6005AAF94 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
+				8BAA774A27394717005AAF94 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8BAA774927394707005AAF94 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8BAA774B27394735005AAF94 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8BAA774A27394717005AAF94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D5F4627283252006721DA /* PlaceTableViewCell.swift */,
+				8B9D5F4727283252006721DA /* PlaceTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BAA774B27394735005AAF94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B12B63D27296216007A533A /* ParkViewController.swift */,
+				8BAA774C27394744005AAF94 /* Header */,
+				8BAA774D2739474C005AAF94 /* Info */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BAA774C27394744005AAF94 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8B12B63F27299518007A533A /* ParkHeaderTableViewCell.swift */,
+				8B12B64027299518007A533A /* ParkHeaderTableViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8BAA774D2739474C005AAF94 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				8B9D5F5A272941AD006721DA /* ParkInfoTableViewCell.swift */,
+				8B9D5F5B272941AD006721DA /* ParkInfoTableViewCell.xib */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		8BDC216E272819CE002CC9A0 = {
 			isa = PBXGroup;
 			children = (
 				8BDC2179272819CE002CC9A0 /* LandmarksNib */,
 				8BDC2178272819CE002CC9A0 /* Products */,
+				F7D445F6C8A6B8C66F291854 /* Pods */,
+				CBF5551185BEAD9CB4025F02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +152,34 @@
 		8BDC2179272819CE002CC9A0 /* LandmarksNib */ = {
 			isa = PBXGroup;
 			children = (
+				8BAA7746273946EC005AAF94 /* UI */,
 				8BDC217A272819CE002CC9A0 /* AppDelegate.swift */,
 				8BDC217C272819CE002CC9A0 /* SceneDelegate.swift */,
-				8BDC217E272819CE002CC9A0 /* ViewController.swift */,
+				8B9D5F4A27283641006721DA /* Model */,
 				8BDC2180272819CE002CC9A0 /* Main.storyboard */,
 				8BDC2183272819CF002CC9A0 /* Assets.xcassets */,
 				8BDC2185272819CF002CC9A0 /* LaunchScreen.storyboard */,
 				8BDC2188272819CF002CC9A0 /* Info.plist */,
+				8B9D5F4F27284CFB006721DA /* landmarkData.json */,
 			);
 			path = LandmarksNib;
+			sourceTree = "<group>";
+		};
+		CBF5551185BEAD9CB4025F02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				015520E4E38F40408A315308 /* Pods_LandmarksNib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7D445F6C8A6B8C66F291854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56796FCC8F4D3A54DD83FDEF /* Pods-LandmarksNib.debug.xcconfig */,
+				EBF17486655528CED639823E /* Pods-LandmarksNib.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BDC218B272819CF002CC9A0 /* Build configuration list for PBXNativeTarget "LandmarksNib" */;
 			buildPhases = (
+				9274FAD7738A790DF6ACC301 /* [CP] Check Pods Manifest.lock */,
 				8BDC2173272819CE002CC9A0 /* Sources */,
 				8BDC2174272819CE002CC9A0 /* Frameworks */,
 				8BDC2175272819CE002CC9A0 /* Resources */,
+				09AA2058CDB3CAA47EC94816 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +245,70 @@
 				8BDC2187272819CF002CC9A0 /* LaunchScreen.storyboard in Resources */,
 				8BDC2184272819CF002CC9A0 /* Assets.xcassets in Resources */,
 				8BDC2182272819CE002CC9A0 /* Main.storyboard in Resources */,
+				8B9D5F5027284CFB006721DA /* landmarkData.json in Resources */,
+				8B12B64227299518007A533A /* ParkHeaderTableViewCell.xib in Resources */,
+				8B9D5F5D272941AD006721DA /* ParkInfoTableViewCell.xib in Resources */,
+				8B9D5F4927283252006721DA /* PlaceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09AA2058CDB3CAA47EC94816 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LandmarksNib/Pods-LandmarksNib-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LandmarksNib/Pods-LandmarksNib-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LandmarksNib/Pods-LandmarksNib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9274FAD7738A790DF6ACC301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LandmarksNib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BDC2173272819CE002CC9A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B12B63E27296216007A533A /* ParkViewController.swift in Sources */,
 				8BDC217F272819CE002CC9A0 /* ViewController.swift in Sources */,
+				8B12B64127299518007A533A /* ParkHeaderTableViewCell.swift in Sources */,
 				8BDC217B272819CE002CC9A0 /* AppDelegate.swift in Sources */,
 				8BDC217D272819CE002CC9A0 /* SceneDelegate.swift in Sources */,
+				8B9D5F4827283252006721DA /* PlaceTableViewCell.swift in Sources */,
+				8B9D5F5C272941AD006721DA /* ParkInfoTableViewCell.swift in Sources */,
+				8B9D5F4C27283671006721DA /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +452,7 @@
 		};
 		8BDC218C272819CF002CC9A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56796FCC8F4D3A54DD83FDEF /* Pods-LandmarksNib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +482,7 @@
 		};
 		8BDC218D272819CF002CC9A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF17486655528CED639823E /* Pods-LandmarksNib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
